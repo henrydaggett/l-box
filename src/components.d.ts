@@ -16,6 +16,11 @@ export namespace Components {
         "wrap": boolean;
     }
     interface VBox {
+        "bottom": boolean;
+        "fill": boolean;
+        "spread": boolean;
+        "top": boolean;
+        "wrap": boolean;
     }
 }
 declare global {
@@ -54,6 +59,11 @@ declare namespace LocalJSX {
         "wrap"?: boolean;
     }
     interface VBox {
+        "bottom"?: boolean;
+        "fill"?: boolean;
+        "spread"?: boolean;
+        "top"?: boolean;
+        "wrap"?: boolean;
     }
     interface IntrinsicElements {
         "c-box": CBox;
