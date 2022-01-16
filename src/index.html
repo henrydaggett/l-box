@@ -12,30 +12,41 @@
   <style>
     p {
       margin: 0px;
+      background-color: lightslategray;
     }
 
     c-box {
+      background-color: lightgrey;
+      margin-bottom: 16px;
       height: 100px;
       width: 100px;
-      background-color: lightgrey;
     }
 
     h-box {
       background-color: lightgrey;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
+      height: 100px;
+      width: 100px;
     }
 
     v-box {
       background-color: lightgrey;
+      margin-bottom: 16px;
+      height: 100px;
+      width: 100px;
     }
   </style>
 
   <body>
 
-    <c-box>Center</c-box>
+    C-BOX
+    <c-box>
+      <p>Center</p>
+    </c-box>
 
     <br>
 
+    H-BOX
     <h-box>
       <p>left</p>
       <p>right</p>
@@ -65,13 +76,39 @@
       <p>left</p>
       <p>right</p>
     </h-box>
+<br>
 
-    <br>
-
+    V-BOX
     <v-box>
       <p>top</p>
       <p>bottom</p>
     </v-box>
+
+    <v-box spread>
+      <p>left</p>
+      <p>right</p>
+    </v-box>
+    
+    <v-box fill>
+      <p>left</p>
+      <p>right</p>
+    </v-box>
+    
+    <v-box wrap>
+      <p>left</p>
+      <p>right</p>
+    </v-box>
+    
+    <v-box left>
+      <p>left</p>
+      <p>right</p>
+    </v-box>
+    
+    <v-box right>
+      <p>left</p>
+      <p>right</p>
+    </v-box>
+    </div>
 
   </body>
 </html>

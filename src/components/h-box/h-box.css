@@ -5,22 +5,22 @@
   align-items: center;
 }
 
-.spread {
+:host(.spread) {
   justify-content: space-between;
 }
 
-.fill {
+:host(.fill) {
   align-items: stretch;
 }
 
-.wrap {
+:host(.wrap) {
   flex-wrap: wrap;
 }
 
-.top {
+:host(.top) {
   align-items: flex-start;
 }
 
-.bottom {
-  align-items: flex-end;
+:host(.bottom) {
+    align-items: flex-end;
 }

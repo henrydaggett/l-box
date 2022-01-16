@@ -13,13 +13,21 @@ export class VBox {
 
   @Prop() wrap: boolean;
 
-  @Prop() top: boolean;
+  @Prop() left: boolean;
 
-  @Prop() bottom: boolean;
+  @Prop() right: boolean;
 
   render() {
     return (
-      <Host>
+      <Host
+        class={{
+          'spread': this.spread,
+          'fill': this.fill,
+          'wrap': this.wrap,
+          'left': this.left,
+          'right': this.right
+        }}
+      >
         <slot></slot>
       </Host>
     );

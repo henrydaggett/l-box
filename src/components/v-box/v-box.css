@@ -4,3 +4,23 @@
   flex-direction: column;
   align-items: center;
 }
+
+:host(.spread) {
+  justify-content: space-between;
+}
+
+:host(.fill) {
+  align-items: stretch;
+}
+
+:host(.wrap) {
+  flex-wrap: wrap;
+}
+
+:host(.left) {
+  align-items: flex-start;
+}
+
+:host(.right) {
+  align-items: flex-end;
+}
