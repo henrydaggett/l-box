@@ -3,5 +3,24 @@
   flex: 1;
   flex-direction: row;
   align-items: center;
+}
+
+.spread {
   justify-content: space-between;
+}
+
+.fill {
+  align-items: stretch;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.top {
+  align-items: flex-start;
+}
+
+.bottom {
+  align-items: flex-end;
 }

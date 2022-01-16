@@ -7,19 +7,27 @@ import { Component, Prop, Host, h } from '@stencil/core';
 })
 export class HBox {
 
-  @Prop() spread: boolean;
+  @Prop() spread: boolean = false;
 
-  @Prop() fill: boolean;
+  @Prop() fill: boolean = false;
 
-  @Prop() wrap: boolean;
+  @Prop() wrap: boolean = false;
 
-  @Prop() top: boolean;
+  @Prop() top: boolean = false;
 
-  @Prop() bottom: boolean;
+  @Prop() bottom: boolean = false;
 
   render() {
     return (
-      <Host>
+      <Host
+        class={{
+          'spread': this.spread,
+          'fill': this.fill,
+          'wrap': this.wrap,
+          'top': this.top,
+          'bottom': this.bottom
+        }}
+      >
         <slot></slot>
       </Host>
     );

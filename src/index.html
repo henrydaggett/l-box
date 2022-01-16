@@ -3,12 +3,75 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
+    <title>L-BOX TESTING</title>
 
     <script type="module" src="/build/l-box.esm.js"></script>
     <script nomodule src="/build/l-box.js"></script>
   </head>
+
+  <style>
+    p {
+      margin: 0px;
+    }
+
+    c-box {
+      height: 100px;
+      width: 100px;
+      background-color: lightgrey;
+    }
+
+    h-box {
+      background-color: lightgrey;
+      margin-bottom: 24px;
+    }
+
+    v-box {
+      background-color: lightgrey;
+    }
+  </style>
+
   <body>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+
+    <c-box>Center</c-box>
+
+    <br>
+
+    <h-box>
+      <p>left</p>
+      <p>right</p>
+    </h-box>
+
+    <h-box spread>
+      <p>left</p>
+      <p>right</p>
+    </h-box>
+
+    <h-box fill>
+      <p>left</p>
+      <p>right</p>
+    </h-box>
+
+    <h-box wrap>
+      <p>left</p>
+      <p>right</p>
+    </h-box>
+
+    <h-box top>
+      <p>left</p>
+      <p>right</p>
+    </h-box>
+
+    <h-box bottom>
+      <p>left</p>
+      <p>right</p>
+    </h-box>
+
+    <br>
+
+    <v-box>
+      <p>top</p>
+      <p>bottom</p>
+    </v-box>
+
   </body>
 </html>
