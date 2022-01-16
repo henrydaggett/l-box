@@ -17,6 +17,8 @@ export class VBox {
 
   @Prop() right: boolean;
 
+  @Prop() spacing: string;
+
   render() {
     return (
       <Host
@@ -27,6 +29,7 @@ export class VBox {
           'left': this.left,
           'right': this.right
         }}
+        style={{ gap: this.spacing }}
       >
         <slot></slot>
       </Host>

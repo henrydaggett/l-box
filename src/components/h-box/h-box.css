@@ -6,7 +6,6 @@
 
 :host(.spread) {
   justify-content: space-between;
-  flex: 1;
 }
 
 :host(.fill) {

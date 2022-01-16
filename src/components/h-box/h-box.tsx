@@ -7,15 +7,17 @@ import { Component, Prop, Host, h } from '@stencil/core';
 })
 export class HBox {
 
-  @Prop() spread: boolean = false;
+  @Prop() spread: boolean;
 
-  @Prop() fill: boolean = false;
+  @Prop() fill: boolean;
 
-  @Prop() wrap: boolean = false;
+  @Prop() wrap: boolean;
 
-  @Prop() top: boolean = false;
+  @Prop() top: boolean;
 
-  @Prop() bottom: boolean = false;
+  @Prop() bottom: boolean;
+
+  @Prop() spacing: string;
 
   render() {
     return (
@@ -27,6 +29,7 @@ export class HBox {
           'top': this.top,
           'bottom': this.bottom
         }}
+        style={{gap: this.spacing}}
       >
         <slot></slot>
       </Host>

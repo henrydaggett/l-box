@@ -11,6 +11,7 @@ export namespace Components {
     interface HBox {
         "bottom": boolean;
         "fill": boolean;
+        "spacing": string;
         "spread": boolean;
         "top": boolean;
         "wrap": boolean;
@@ -19,6 +20,7 @@ export namespace Components {
         "fill": boolean;
         "left": boolean;
         "right": boolean;
+        "spacing": string;
         "spread": boolean;
         "wrap": boolean;
     }
@@ -54,6 +56,7 @@ declare namespace LocalJSX {
     interface HBox {
         "bottom"?: boolean;
         "fill"?: boolean;
+        "spacing"?: string;
         "spread"?: boolean;
         "top"?: boolean;
         "wrap"?: boolean;
@@ -62,6 +65,7 @@ declare namespace LocalJSX {
         "fill"?: boolean;
         "left"?: boolean;
         "right"?: boolean;
+        "spacing"?: string;
         "spread"?: boolean;
         "wrap"?: boolean;
     }
