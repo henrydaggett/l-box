@@ -1,12 +1,12 @@
 :host {
   display: flex;
-  flex: 1;
   flex-direction: column;
   align-items: center;
 }
 
 :host(.spread) {
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 :host(.fill) {

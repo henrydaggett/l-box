@@ -1,114 +1,130 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>L-BOX TESTING</title>
 
-    <script type="module" src="/build/l-box.esm.js"></script>
-    <script nomodule src="/build/l-box.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>L-BOX TESTING</title>
 
-  <style>
-    p {
-      margin: 0px;
-      background-color: lightslategray;
-    }
+  <script type="module" src="/build/l-box.esm.js"></script>
+  <script nomodule src="/build/l-box.js"></script>
+</head>
 
-    c-box {
-      background-color: lightgrey;
-      margin-bottom: 16px;
-      height: 100px;
-      width: 100px;
-    }
+<style>
+  p {
+    margin: 0px;
+    background-color: lightslategray;
+    font-family: sans-serif;
+  }
 
-    h-box {
-      background-color: lightgrey;
-      margin-bottom: 16px;
-      height: 100px;
-      width: 100px;
-    }
+  v-box c-box {
+    background-color: lightgrey;
+    margin-bottom: 16px;
+    height: 100px;
+    width: 100px;
+  }
 
-    v-box {
-      background-color: lightgrey;
-      margin-bottom: 16px;
-      height: 100px;
-      width: 100px;
-    }
-  </style>
+  v-box h-box {
+    background-color: lightgrey;
+    margin-bottom: 16px;
+    height: 100px;
+    width: 100px;
+  }
 
-  <body>
+  v-box v-box {
+    background-color: lightgrey;
+    margin-bottom: 16px;
+    height: 100px;
+    width: 100px;
+  }
+</style>
 
-    C-BOX
-    <c-box>
-      <p>Center</p>
-    </c-box>
+<body>
 
-    <br>
+  <h-box spread">
+    <p>one</p>
+    <p>two</p>
+  </h-box>
 
-    H-BOX
-    <h-box>
-      <p>left</p>
-      <p>right</p>
-    </h-box>
-
-    <h-box spread>
-      <p>left</p>
-      <p>right</p>
-    </h-box>
-
-    <h-box fill>
-      <p>left</p>
-      <p>right</p>
-    </h-box>
-
-    <h-box wrap>
-      <p>left</p>
-      <p>right</p>
-    </h-box>
-
-    <h-box top>
-      <p>left</p>
-      <p>right</p>
-    </h-box>
-
-    <h-box bottom>
-      <p>left</p>
-      <p>right</p>
-    </h-box>
-<br>
-
-    V-BOX
-    <v-box>
-      <p>top</p>
-      <p>bottom</p>
-    </v-box>
-
-    <v-box spread>
-      <p>left</p>
-      <p>right</p>
-    </v-box>
-    
-    <v-box fill>
-      <p>left</p>
-      <p>right</p>
-    </v-box>
-    
-    <v-box wrap>
-      <p>left</p>
-      <p>right</p>
-    </v-box>
-    
+  <h-box spread top fill>
     <v-box left>
-      <p>left</p>
-      <p>right</p>
+      C-BOX
+      <c-box>
+        <p>Center</p>
+      </c-box>
     </v-box>
-    
-    <v-box right>
-      <p>left</p>
-      <p>right</p>
-    </v-box>
-    </div>
 
-  </body>
+    <v-box>
+      H-BOX
+      <h-box>
+        <p>one</p>
+        <p>two</p>
+      </h-box>
+
+      <h-box spread>
+        <p>one</p>
+        <p>two</p>
+      </h-box>
+
+      <h-box fill>
+        <p>one</p>
+        <p>two</p>
+      </h-box>
+
+      <h-box wrap>
+        <p>one</p>
+        <p>two</p>
+      </h-box>
+
+      <h-box top>
+        <p>one</p>
+        <p>two</p>
+      </h-box>
+
+      <h-box bottom>
+        <p>one</p>
+        <p>two</p>
+      </h-box>
+    </v-box>
+
+    <v-box right>
+      V-BOX
+      <v-box>
+        <p>top</p>
+        <p>bottom</p>
+      </v-box>
+
+      <v-box spread>
+        <p>one</p>
+        <p>two</p>
+      </v-box>
+
+      <v-box fill>
+        <p>one</p>
+        <p>two</p>
+      </v-box>
+
+      <v-box wrap>
+        <p>one</p>
+        <p>two</p>
+        <p>three</p>
+        <p>four</p>
+        <p>five</p>
+        <p>six</p>
+      </v-box>
+
+      <v-box left>
+        <p>one</p>
+        <p>two</p>
+      </v-box>
+
+      <v-box right>
+        <p>one</p>
+        <p>two</p>
+      </v-box>
+    </v-box>
+  </h-box>
+
+</body>
+
 </html>
